@@ -9,6 +9,9 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y%m%d')"
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -27,4 +30,4 @@ jobs:
         with:
           platforms: linux/arm/v6,linux/arm/v7,linux/arm64
           push: true
-          tags: fsodano79/raspbian-bullseye:$(date +'%d-%m-%Y')
+          tags: fsodano79/raspbian-bullseye:${{ steps.date.outputs.date }}
