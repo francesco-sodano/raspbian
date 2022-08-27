@@ -1,9 +1,8 @@
 name: Build Raspbian Bullseye Image
 
 on:
-  push:
-    branches:
-      - 'main'
+  schedule:
+    - cron: "0 2 1 * *"
 
 jobs:
   docker:
