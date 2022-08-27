@@ -11,3 +11,4 @@ Automatically updated every month with the updated packages.
 ### See also
 
 * Docker Hub [fsodano79/raspbian-bullseye](https://hub.docker.com/r/fsodano79/raspbian-bullseye).
+* Base Image [raspbian/stretch](https://hub.docker.com/r/raspbian/stretch).
