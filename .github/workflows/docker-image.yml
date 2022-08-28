@@ -2,7 +2,7 @@ name: Build Raspbian Bullseye Image
 
 on:
   schedule:
-    - cron: "0 2 28 * *"
+    - cron: "0 6 1 * *"
 
 jobs:
   docker:
