@@ -12,7 +12,7 @@ RUN true \
 	&& apt-get full-upgrade -y \
 	&& apt-get autoremove --purge -y \
 	&& apt-get clean -y \
-	# Switch to Bullseye repository.
+	# Switch to Buster repository.
 	&& sed -i 's/stretch/buster/g' /etc/apt/sources.list \
 	# Update all packages.
 	&& apt-get update \
