@@ -28,7 +28,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
-          file: ./stretch/Dockerfile
+          file: ./bookworm/Dockerfile
           platforms: linux/arm/v6,linux/arm/v7,linux/arm64
           push: true
           tags: fsodano79/raspbian:bookworm-${{ steps.date.outputs.date }}
